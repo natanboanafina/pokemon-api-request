@@ -1,9 +1,49 @@
 *{
   box-sizing: border-box;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 body{
-background: #a0a0a0
+background: #a0a0a0;
+background-image: url("../assets/pokemon-background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header{
+  margin: 0;
+} 
+
+header h1{
+  font-size: 2.5rem;
+  margin: 1%;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content:center;
+  padding: 1%;
+}
+.container label{
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.container input{
+  margin-left: 1%;
+}
+ul {
+  /* background: hsl(195, 53%, 80%); */
+  border: 1px solid blue;
+  color: #fff;
+  margin: 1%;
+}
+
+ul li{
+  list-style: none;
 }

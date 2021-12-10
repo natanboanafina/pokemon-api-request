@@ -23,14 +23,14 @@ function renderFilt(data){
 let output = '';
   data.data.filter((item) => {
   output += `
-    <ul>
-      <li>Nome: ${item.name}</li>
-      <li>Supertipo: ${item.supertype}</li>
-      <li>Tipo: ${item.types}</li>
-      <li>Subtipo: ${item.subtypes}</li>
-      <li>Evolução de: ${item.evolvesFrom}
+    <ul class="bg-dark bg-gradient border border-info" style="--bs-bg-opacity: .2;">
+      <li >Nome: ${item.name}</li>
+      <li >Supertipo: ${item.supertype}</li>
+      <li >Tipo: ${item.types}</li>
+      <li >Subtipo: ${item.subtypes}</li>
+      <li >Evolução de: ${item.evolvesFrom}
     </li>
-      <li>Ataques: ${item.attacks.map(attack => 
+      <li >Ataques: ${item.attacks.map(attack => 
         `
         <span>${attack.name}</span>,
         <span>${attack.cost}</span>
